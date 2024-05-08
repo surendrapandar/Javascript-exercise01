@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.4.5"
   }
 }

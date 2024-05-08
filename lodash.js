@@ -1,3 +1,4 @@
+// @ts-nocheck
 const _ = require("lodash");
 
 const members = [
@@ -22,6 +23,7 @@ const age_40_60 = _.filter(members, function (member) {
 });
 
 const average_age = Math.floor(_.sumBy(members, "age") / members.length);
+console.log(average_age);
 
 const max_age = _.maxBy(members, "age").age;
 
@@ -66,6 +68,7 @@ const existing_object = {
 };
 
 const new_object = _.assign({}, existing_object, { age: 29 });
+
 
 const total_experience = _.sumBy(members, "age");
 

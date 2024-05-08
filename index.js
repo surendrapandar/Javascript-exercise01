@@ -1,3 +1,4 @@
+// @ts-nocheck
 const members = [
     {name: 'Rakesh Gupta', age: 20},
     {name: 'Yash Jangid', age: 40},
@@ -23,8 +24,10 @@ const members = [
 
 
   const average_age  = members.reduce(function(total, member){
-    return total + member.age;
+    return total + (member.age || 0);
   }, 0) / members.length;
+
+  console.log(average_age);
 
 
   const max_age = members.reduce(function(max_age, member) {
